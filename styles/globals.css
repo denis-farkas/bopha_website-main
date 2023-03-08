@@ -1,0 +1,602 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-weight: 500 !important;
+  line-height: 25px;
+  color: #60636c !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+h1 {
+  position: absolute;
+  font-size: 200px !important;
+  line-height: 200px;
+  letter-spacing: 10px;
+  z-index: 1;
+  color: #dcdce5;
+  font-weight: 700 !important;
+}
+
+h2 {
+  font-size: 56px !important;
+  font-weight: 700 !important;
+  line-height: 56px !important;
+}
+
+.button {
+  font-weight: 500 !important;
+  border-radius: 0 !important;
+  padding: 20px 40px !important;
+}
+
+.navbar-nav {
+  font-weight: 600;
+}
+
+#home h1 {
+  font-size: 80px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0px;
+  position: relative;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1 !important;
+}
+.frame {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0) 60%,
+    rgba(57, 56, 56) 100%
+  );
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1100px !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  h1 {
+    font-size: 130px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    display: none;
+  }
+  #home h1 {
+    font-size: 30px !important;
+    display: block;
+  }
+  h6 {
+    display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  h2 {
+    font-size: 45px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+/*  CSS  ServicesHome section */
+
+.arrow {
+  margin-left: 20px;
+}
+
+.services-card {
+  position: relative;
+  max-width: 345px;
+  height: 560px;
+}
+
+.card-img {
+  object-fit: cover;
+  width: 100%;
+  height: 560px;
+}
+
+.card-title {
+  position: absolute;
+  top: 500px;
+  left: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: white;
+}
+
+@media (min-width: 1025px) {
+  .services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .middle {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .services-card {
+    max-width: 935px;
+    height: 400px;
+  }
+  .card-img {
+    height: 400px;
+  }
+  .card-title {
+    top: 350px;
+  }
+}
+
+@media (max-width: 414px) {
+  .services-card {
+    max-width: 370px;
+    height: 240px;
+  }
+  .card-img {
+    height: 240px;
+  }
+  .card-title {
+    top: 200px;
+    font-size: 16px;
+  }
+  #servicesHome .button,
+  #galerie .button {
+    display: none !important;
+  }
+}
+
+/*  fin CSS services section */
+
+/*  CSS  footer section */
+
+footer {
+  height: 200px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  background-color: #f0f0f5;
+}
+
+#footer .container {
+  text-align: center;
+  position: relative;
+  flex-flow: row;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.footer-img {
+  background-color: #1b1d23;
+  height: 100%;
+  width: 200px;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+footer .navbar-nav {
+  flex-direction: row !important;
+  font-weight: 600;
+  justify-content: space-around;
+}
+
+.nav-item {
+  margin: 20px;
+}
+
+footer button {
+  width: 300px;
+  height: 72px;
+  margin-right: 10%;
+}
+
+@media (max-width: 1024px) {
+  footer {
+    height: 160px;
+  }
+
+  .footer-img {
+    width: 15%;
+    padding: 10px;
+  }
+  footer button {
+    width: 250px;
+    height: 72px;
+    margin-right: 0%;
+  }
+}
+
+@media (max-width: 766px) {
+  footer .navbar {
+    display: inline;
+  }
+
+  footer .navbar-nav {
+    flex-direction: column !important;
+    margin: 20px;
+  }
+
+  footer {
+    height: 350px;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  #footer .container {
+    flex-direction: column !important;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    position: absolute;
+    top: -50px;
+    margin-right: 0px;
+  }
+
+  .nav-item {
+    margin: 0px;
+  }
+
+  footer button {
+    width: 280px;
+    height: 72px;
+    margin-right: 0%;
+  }
+}
+
+/*  fin CSS footer section */
+
+/*  CSS page services section */
+
+#decoration h1 {
+  top: -164px;
+  right: 30px;
+}
+
+#decoration .container {
+  margin-bottom: 200px;
+}
+
+.services-img {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.services-text {
+  height: 320px;
+  width: 735px;
+  top: 600px;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  position: absolute;
+  margin: 0px;
+  padding-top: 50px;
+  padding-left: 60px;
+}
+
+.services-text p {
+  width: 80%;
+}
+
+@media (max-width: 1024px) {
+  #decoration h1 {
+    top: -140px;
+    right: 0px;
+    font-size: 180px;
+  }
+  .services-text {
+    height: 300px;
+    top: 460px;
+    padding-top: 75px;
+  }
+}
+
+@media (max-width: 835px) {
+  #decoration h1 {
+    top: -110px;
+    right: 100px;
+  }
+  #decoration h2 {
+    margin-top: -40px;
+  }
+  .services-text {
+    top: 350px;
+    right: -60px;
+    height: 290px;
+  }
+}
+@media (max-width: 415px) {
+  #decoration h2 {
+    margin-top: 0px;
+  }
+
+  #decoration .container {
+    margin-bottom: 80px;
+  }
+  .services-text {
+    top: 360px;
+    right: 0px;
+    width: 100%;
+    padding: 10%;
+  }
+  .services-text p {
+    width: 100%;
+  }
+}
+
+#coursFloral {
+  background-color: #f0f0f5;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#coursFloral .container,
+#jardin .container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cours-text {
+  width: 50%;
+  padding-right: 10%;
+  margin-top: 30px;
+}
+
+.cours-img {
+  width: 50%;
+}
+
+.jardin-text {
+  width: 50%;
+  padding-left: 10%;
+}
+
+@media (max-width: 1279px) {
+  #coursFloral .container {
+    margin-bottom: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #jardin .container {
+    margin-top: -70px !important;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cours-text,
+  .jardin-text {
+    width: 90%;
+    margin-top: 30px;
+  }
+  .cours-img {
+    width: 80%;
+    margin: 10%;
+  }
+}
+@media (max-width: 767px) {
+  .services-text {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding-left: 30px;
+    height: 410px;
+  }
+
+  #coursFloral .container {
+    margin-top: 0px !important;
+  }
+}
+
+/*  fin CSS page services  */
+
+/*  CSS page galerie section */
+
+#galerie .card-title,
+#galerie .overlay {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+#galerie .services-card:hover .card-title,
+#galerie .services-card:hover .overlay {
+  opacity: 1;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/*  fin CSS page galerie  */
+
+/*  CSS page contact section */
+
+#contact h1 {
+  top: -164px;
+  right: 98px;
+}
+
+#contact .container {
+  margin-bottom: 200px;
+}
+
+#contactForm {
+  background-color: #f0f0f5;
+}
+
+#contactForm .container,
+#contactDetails .container {
+  width: 100%;
+  padding-top: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#contactForm form {
+  max-width: 500px;
+}
+
+#contactForm a {
+  color: #850f9b;
+}
+
+.contact-img {
+  width: 40%;
+}
+
+textarea {
+  resize: none !important;
+}
+
+.form-control,
+.form-select {
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+.details-img img {
+  width: 50%;
+  border-radius: 50%;
+  margin-left: 20%;
+}
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+}
+.social-network ul {
+  display: flex;
+}
+
+.icon img {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+#contactDetails a {
+  text-decoration: none;
+  color: #60636c;
+}
+
+@media (max-width: 1024px) {
+  #contact h1 {
+    top: -140px;
+    right: 70px;
+    font-size: 180px;
+  }
+}
+
+@media (max-width: 834px) {
+  #contact h1 {
+    top: -100px;
+    right: 135px;
+  }
+  #contactForm .container {
+    width: 70%;
+    padding-left: 10%;
+    padding-top: 100px;
+  }
+
+  .contact-img,
+  .details-img {
+    display: none;
+  }
+  #contactDetails .container {
+    padding-top: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 414px) {
+  #contact h2 {
+    margin-top: 0px;
+  }
+
+  #contact .container {
+    margin-bottom: 80px;
+  }
+  #contactForm .container {
+    width: 100%;
+    padding-top: 30px;
+  }
+  #contactDetails .container {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .details-img {
+    display: block;
+  }
+  .details-img img {
+    margin-left: 0%;
+    margin-top: 20px;
+    width: 70%;
+  }
+}
+/*  fin CSS page contact   */
+
+/*  CSS page dashboard */
+#dashboard {
+  min-height: 55vh;
+}
+
+/*  fin CSS page dashboard   */
+
+/*  CSS page Admin */
+#admin {
+  min-height: 55vh;
+}
+
+#admin .container {
+  background-color: #f0f0f5;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding:50px;
+} 
+
